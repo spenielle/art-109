@@ -31,6 +31,77 @@ header {
     /* text-align: center; */
 }
 
+
 header h1 {
     font-size: 3rem;
+}
+
+nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color:#000000;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.about-section, .portfolio-section, .contact-section {
+    margin-bottom: 5rem;
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about-content h2, .portfolio-content h2, .contact-content h2 {
+    padding: 2rem 0;
+
+}
+
+.portfolio-item {
+    margin-bottom: 5rem;
+    background-color:#ffffff;
+    padding: 4rem;
+    text-align: justify;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px #696969;
+}
+
+.about-section {
+    background-color:#ffffff;
+}
+
+.portfolio-section {
+    background-color:#bdbdbd;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display:block;
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.2 rem;
+}
+
+footer {
+    background-color: #333;
+    color: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.5rem;
 }
