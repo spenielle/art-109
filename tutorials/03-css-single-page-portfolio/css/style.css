@@ -1,0 +1,36 @@
+/* CSS resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Respect User Font Size Preferences */
+html {
+    font-size: 100%;
+}
+
+/* General CSS */
+body {
+    background-color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+
+header {
+    /* background-image: url("../images/sarisaristorepainting.jpg");
+    background-color:#3a3a3a;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    padding: 6rem;
+    margin-bottom: 3rem;
+    border-bottom:#000000 1px solid;
+    /* background-color: #ffffff; */
+    /* color:#000000 */
+    /* text-align: center; */
+}
+
+header h1 {
+    font-size: 3rem;
+}
