@@ -1,0 +1,51 @@
+
+
+
+.title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.square {
+    background-color:rgb(60, 41, 236);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 0.5s;
+    
+}
+
+.square:hover {
+    background-color:#88ce17;
+    transform: rotate(45deg);
+
+}
+
+
+.button-div {
+    text-align: center;
+
+}
+
+.button {
+    color:white;
+    background-color:#daab14; 
+    padding: 15px ;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+    /*
+    margin: 50px auto;
+    display: block;
+    width: 100px;
+    text-align: center;
+    */
+}
+
+.button:hover{
+    background-color:cornflowerblue;
+    color: black;
+    transform: scale(1.5);
+
+}
