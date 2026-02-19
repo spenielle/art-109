@@ -1,3 +1,17 @@
+/* Color Palette */
+
+:root {
+--bg-color-1: #fff;
+--bg-color-3: #CFDEE7;
+--bg-color-2: #5d8be2;
+--font: #111;
+--accent-1: #5E7CE2;
+--accent-2: #4472CA;
+--dark: #0A369D;
+
+}
+
+
 /* CSS resets */
 * {
     margin: 0;
@@ -9,13 +23,28 @@ html {
     font-size: 100%;
 }
 
+html {
+    scroll-behavior:smooth;
+
+}
+
+
+
 /* General CSS */
 body {
-    background-color: #ffffff;
+    background-color: var(--bg-color-1);
+    color: var(--font);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
+    text-align: justify;
 
+}
+
+@media (max-width: 861px) {
+    body { 
+    font-size: 1.3rem;
+    }
 }
 
 header {
@@ -31,9 +60,18 @@ header {
     /* text-align: center; */
 }
 
+@media  (max-width: 861px) {
+    header {
+        padding-left: 2rem;
+    }
+}
 
 header h1 {
-    font-size: 3rem;
+    font-size: 5rem;
+
+    /*text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color:#d1a30a */
 }
 
 nav {
@@ -47,6 +85,36 @@ nav a {
     color:#000000;
     display: inline-block;
     margin: 1rem;
+    transition: all .5s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-1);
+    /* transform: scale(1.1); */
+
+}
+
+@media (max-width: 797px) {
+    nav a {
+        margin: 0.5rem;
+    }
+}
+
+main {
+    margin: 0;
+
+}
+
+@media (max-width: 1250px) {
+    main {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 860px){
+    main {
+        margin: 1 rem;
+    }
 }
 
 .about-section, .portfolio-section, .contact-section {
@@ -60,25 +128,42 @@ nav a {
 }
 
 .about-content h2, .portfolio-content h2, .contact-content h2 {
-    padding: 2rem 0;
+    
+    margin: 2rem 0;
+    padding: 1rem 0;
+    background-color: var(--bg-color-2);
+    border-radius: 3rem;
+    display: inline-block;
 
 }
 
 .portfolio-item {
     margin-bottom: 5rem;
-    background-color:#ffffff;
-    padding: 4rem;
-    text-align: justify;
+    background-color: var(--bg-color-1);
+    padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 4px 6px #696969;
 }
 
+@media (max-width: 861px){
+    .portfolio-item{
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width: 717px){
+    .portfolio-item{
+        padding: 2rem;
+    }
+}
+
 .about-section {
-    background-color:#ffffff;
+    background-color:#ffffff
 }
 
 .portfolio-section {
-    background-color:#bdbdbd;
+    background-color: #d7e5ff;
 }
 
 .portfolio-item img {
@@ -96,8 +181,8 @@ nav a {
 }
 
 footer {
-    background-color: #333;
-    color: #eee;
+    background-color: var(--accent-2);
+    color: var(--bg-color-1);
     padding: 1rem;
     text-align: center;
 }
