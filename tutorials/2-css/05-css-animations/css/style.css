@@ -79,16 +79,23 @@ body {
     100% {width: 80vw;}
 }
 
+.moving-square-div {
+    text-align: center;
+
+}
 
 .moving-square {
     border-radius: 10px;
-    margin: 200px auto;
+    margin: 300px auto;
     width: 300px;
     height: 300px;
     background-color: #8e1cbb;
     position: relative;
     animation: left-to-right 4s infinite alternate-reverse;
     transition: transform 1s, background-color 0.5s;
+    padding: 15px ;
+    text-decoration: none;
+    display: inline-block;
     
     /*
     animation: left-to-right 1s ease in forwards infinite alternate;
@@ -100,7 +107,7 @@ body {
 .moving-square:hover {
     background-color:cornflowerblue;
     animation-play-state: paused;
-    transform: scale(1.5);
+    transform: scale(2);
 
 }
 
