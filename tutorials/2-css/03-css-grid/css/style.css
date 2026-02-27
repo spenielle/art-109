@@ -1,0 +1,246 @@
+/* Color Palette */
+
+:root {
+--bg-color-1: #000000;
+--bg-color-3: #888888;
+--bg-color-2: #5d8be2;
+--font: #ffffff;
+--accent-1: #5E7CE2;
+--accent-2: #4472CA;
+--dark: #0A369D;
+
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ CSS resets ~~~~~~~~~~~~~~~~~~~~~~~*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Respect User Font Size Preferences */
+html {
+    font-size: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior:smooth;
+
+}
+
+
+
+/* General CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background-color: var(--bg-color-1);
+    color: var(--font);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+header {
+    padding: 5rem 2rem;
+    margin-bottom: 7rem;
+}
+
+header h1{
+    color: #FFFFFF;
+    background: #000000;
+    text-shadow: #474747 3px 5px 2px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--font);
+    /* margin: 0 1rem;
+    transition: all .3s; */
+}
+
+nav a:hover {
+    color: var(--accent-2);
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--font);
+    font-size: 3rem;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 750px) {
+    .navbar {
+        align-items: flex-start;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--font);
+        padding: 1rem;
+    }
+
+    .nav-menu a {
+        color: var(--bg-color-1);
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+}
+
+
+main {
+    margin: 0;
+
+}
+
+@media (max-wdith: 1030px) {
+    main {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        margin: 1rem;
+    }
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 60rem;
+    margin: 0 auto 7rem auto;
+}
+
+.about-content h2, 
+.portfolio-content h2, 
+.contact-content h2 {
+    margin: 2rem 0;
+
+}
+
+.portfolio-item{
+    padding: 1rem;
+    background-color: var(--font);
+    color: var(--bg-color-1);
+    border-radius: .3rem;
+
+}
+
+.portfolio-item p{
+    font-size: 1rem;
+}
+
+.portfolio-item h3{
+    font-size: 1.3rem;
+}
+
+/*.portfolio-item img{
+    /* border-radius: .3rem; */
+
+footer {
+    padding: 1rem 2rem;
+}
+
+
+footer img {
+    display: inline;
+    max-width: 2.5rem;
+    margin: 0.5rem;
+}
+
+@media (max-width: 750) {
+    footer p{
+        font-size: 1.2rem;
+    }
+
+    
+    footer-img { 
+        max-width: 1.5rem;
+        margin: 0 .2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer img {
+        max-width: 1.5rem;
+        margin: 0 .1rem;
+    }
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ flex styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-item-grid {
+    flex: 1 0 17rem;
+    
+}
