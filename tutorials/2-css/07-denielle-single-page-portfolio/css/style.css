@@ -181,9 +181,15 @@ main {
 }
 
 footer {
+    background-color: var(--accent-2);
+    color: var(--bg-color-1);
     padding: 1rem 2rem;
+    
 }
 
+footer p {
+    font-size: 1.5rem;
+}
 
 footer img {
     display: inline;
@@ -213,3 +219,4 @@ footer img {
         margin: 0 .1rem;
     }
 }
+
