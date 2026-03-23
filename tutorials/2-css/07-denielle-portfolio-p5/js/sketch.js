@@ -7,7 +7,7 @@ let easing = 0.09;
 function setup (){
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0,0);
-    canvas.style("z-index", -2);
+    canvas.style("position", "fixed");
 }
 
 function windowResized(){
@@ -25,11 +25,11 @@ function draw (){
 
 }
 
-function mouseMoved(){
-    background(100);
-    drawThing(mouseX, mouseY);
+// function mouseMoved(){
+//     background(100);
+//     drawThing(mouseX, mouseY);
    
-}
+// }
 
 function drawThing(_x, _y){
     //strokeWeight(0);
