@@ -9,33 +9,34 @@
 </head>
 <body>
     <main>
-        <iframe width="1120" height="730" src="https://www.youtube.com/embed/ohlFx4tNGPY?si=XqfHCMxlfUlhN1Ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <img src="media/changyu-yanzhang.gif" alt="fan changyu and yan zhang"
-    class="cute-couple">
-    <div class="cutie-patooties-div">
-        <p>
-            you cutie patooties. is that my glorious, elegant, intelligent, charming, kind, thoughtful, strong, courageous, creative, brilliant, gentle, humble, generous, passionate, wise, funny, loyal, dependable, graceful, radiant, calm, confident, warm, compassionate, witty, adventurous, respectful, sincere, magnetic, bold, articulate, empathetic, inspiring, honest, patient, powerful, attentive, uplifting, classy, friendly, reliable, ambitious, intuitive, talented, supportive, grounded, determined, charismatic, extraordinary, trustworthy, noble, dignified, perceptive, innovative, refined, considerate, balanced, open-minded, composed, imaginative, mindful, optimistic, virtuous, noble-hearted, well-spoken, quick-witted, deep, philosophical, fearless, affectionate, expressive, emotionally intelligent, resourceful, delightful, fascinating, sharp, selfless, driven, assertive, authentic, vibrant, playful, observant, skillful, generous-spirited, practical, comforting, brave, wise-hearted, enthusiastic, dependable, tactful, enduring, discreet, well-mannered, composed, mature, tasteful, joyful, understanding, genuine, brilliant-minded, encouraging, well-rounded, magnetic, dynamic, radiant, radiant-spirited, soulful, radiant-hearted, insightful, creative-souled, justice-minded, reliable-hearted, tender, uplifting-minded, persevering, devoted, angelic, down-to-earth, golden-hearted, gentle-spirited, clever, courageous-hearted, courteous, harmonious, loyal-minded, beautiful-souled, easygoing, sincere-hearted, respectful-minded, comforting-voiced, confident-minded, emotionally strong, respectful-souled, imaginative-hearted, protective, noble-minded, confident-souled, wise-eyed, loving, serene, magnetic-souled, expressive-eyed, brilliant-hearted, inspiring-minded, and absolutely unforgettable Fan Changyu and Yan Zhang!
-        </p>
-        <img src="media/fan-changyu.gif" alt="fmc">
-    </div>
-    <!-- autoplay video -->
-    <video width="1580" height="480" autoplay muted loop>
-        <source src="media/zhang-linghe-walk.mp4" type="video/mp4">
-    </video>
-    <!-- hover videos -->
-    <video class="hover-video" width="1580" height="480" muted loop>
-        <source src="media/zhang-linghe-walk.mp4" type="video/mp4">
-    </video>
-    <video class="hover-video" width="1580" height="480" muted loop>
-        <source src="media/zhang-linghe-walk.mp4" type="video/mp4">
-    </video>
-    <!-- click on play video -->
-    <video class="click-video" width="1580" height="480" muted loop>
-        <source src="media/zhang-linghe-walk.mp4" type="video/mp4">
-    </video>
 
-    <video id="webcam" autoplay playinline></video>
+        <img src="media/workplace.jpg" alt="Workplace" usemap="#workmap">
+
+        <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="computer.htm" onclick="myComputer()">
+        <area shape="rect" coords="290,172,333,250" href="phone.htm" onclick="myPhone()">
+        <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myCoffee()">
+        </map>
+
+<!-- notification when you click on coffee cup -->
+
+        <script>
+            function myComputer() {
+            alert("You clicked the computer!");
+            }
+
+            function myPhone() {
+            alert("You clicked the phone!");
+            }
+
+            function myCoffee() {
+            alert("You clicked the coffee cup!");
+            }
+        </script>
+
+        
+
+
     </main>
 
     <script src="js/video.js"></script>
