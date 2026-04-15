@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 3</title>
+    <title>Level 2</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <main>
-
-    <div class="difference-three" id="level-three">
-        <img src="media/findthediff3.png" alt="find-the-difference3" usemap="#image-map-three">
-        <map name="image-map-three">
-            <area shape="rect" coords="1095,682,963,583" alt="first-difference" title="first-difference3" href="#" onclick="findDiff(1, 1)">
+    
+    <div class="difference-two" id="level-two">
+        <img src="media/findthediff2.png" alt="find-the-difference2" usemap="#image-map-two">
+        <map name="image-map-two">
+            <area shape="rect" coords="1302,317,1256,268" alt="first-difference" title="first-difference2" href="#" onclick="findDiff(1, 2)">
+            <area shape="rect" coords="1093,248,1181,412" alt="second-difference" title="second-difference2" href="#" onclick="findDiff(2, 2)">
         </map>
     </div>
 
@@ -23,15 +24,16 @@
         function findDiff(diffNumber, total) {
 
             found.add(diffNumber);
+            const remaining = total - found.size;
 
-            if (found.size >= total) {
+            if (remaining > 0) {
 
-                alert('YIPEE YOU FOUND THEM ALL! 🔥🔥🔥🔥🔥🔥');
-                window.location.href = 'index5.html';
+                alert('You found one!');
 
             } else {
 
-                alert('You found one!');
+                alert('You found them all! Moving to level 3...');
+                window.location.href = 'index4.html';
             }
         }
     </script>

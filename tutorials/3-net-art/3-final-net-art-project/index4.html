@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥</title>
+    <title>Level 3</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <main>
-    <h1>
-    <button onclick="window.location.href='index.html'">LET'S FIND THE DIFFERENCE</button>
-    </h1>
+
+    <div class="difference-three" id="level-three">
+        <img src="media/findthediff3.png" alt="find-the-difference3" usemap="#image-map-three">
+        <map name="image-map-three">
+            <area shape="rect" coords="1095,682,963,583" alt="first-difference" title="first-difference3" href="#" onclick="findDiff(1, 1)">
+        </map>
+    </div>
+
+    <script>
+        const found = new Set();
+
+        function findDiff(diffNumber, total) {
+
+            found.add(diffNumber);
+
+            if (found.size >= total) {
+
+                alert('YIPEE YOU FOUND THEM ALL! 🔥🔥🔥🔥🔥🔥');
+                window.location.href = 'index5.html';
+
+            } else {
+
+                alert('You found one!');
+            }
+        }
+    </script>
+
 </main>
 </body>
 </html>

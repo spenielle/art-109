@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 2</title>
+    <title>Level 1</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <main>
-    
-    <div class="difference-two" id="level-two">
-        <img src="media/findthediff2.png" alt="find-the-difference2" usemap="#image-map-two">
-        <map name="image-map-two">
-            <area shape="rect" coords="1302,317,1256,268" alt="first-difference" title="first-difference2" href="#" onclick="findDiff(1, 2)">
-            <area shape="rect" coords="1093,248,1181,412" alt="second-difference" title="second-difference2" href="#" onclick="findDiff(2, 2)">
+
+    <div class="difference-one" id="level-one">
+        <img src="media/findthediff1.png" alt="find-the-difference" usemap="#image-map-one">
+        <map name="image-map-one">
+            <area shape="rect" coords="1480,695,1523,730" alt="first-difference" title="first-difference" href="#" onclick="findDiff(1, 2)">
+            <area shape="rect" coords="1310,546,1245,473" alt="second-difference" title="second-difference" href="#" onclick="findDiff(2, 2)">
         </map>
     </div>
 
@@ -31,8 +31,8 @@
                 alert('You found one!');
 
             } else {
-
-                alert('You found them all! Moving to level 3...');
+                
+                alert('You found them all! Moving to level 2...');
                 window.location.href = 'index3.html';
             }
         }
