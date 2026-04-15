@@ -7,31 +7,89 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
-    <main>
 
-        <img src="media/workplace.jpg" alt="Workplace" usemap="#workmap">
+<body>
+
+<main>
+
+    <section class="find-the-difference" id="find-the-difference"></section>
+
+    <div class="difference-one">
+
+        <img src="media/findthediff1.png" alt="find-the-difference" usemap="#image-map">
+
+        <map name="image-map">
+            <area shape="rect" coords="1480,695,1523,730" alt="first-difference" title="first-difference" href="flowerbud.htm" onclick="myFlowerBud()">
+            <area shape="rect" coords="1310,546,1245,473" alt="second-difference" title="second-difference" href="flowerbud2.htm" onclick="myFlowerBud2()" >
+        </map>
+
+    </div>
+
+    <div class="difference-two">
+
+        <img src="media/findthediff2.png" alt="find-the-difference2" usemap="#image-map">
+
+        <map name="image-map">
+            <area shape="rect" coords="1302,317,1256,268" alt="first-difference" title="first-difference2" href="painting.htm" onclick="myPainting()">
+            <area shape="rect" coords="1093,248,1181,412" alt="second-difference" title="second-difference2" href="curtain.htm" onclick="myCurtain()" >
+        </map>
+
+
+    </div>
+    
+    <div class="difference-three">
+        
+        <img src="media/findthediff3.png" alt="find-the-difference3" usemap="#image-map">
+
+        <map name="image-map">
+            <area shape="rect" coords="1095,682,963,583" alt="first-difference" title="first-difference3s" href="wood.htm" onclick="myWood()">
+        </map>
+
+    </div>
+        
+<!-- notification when you click on coffee cup -->
+
+     <!-- <img src="media/workplace.jpg" alt="Workplace" usemap="#workmap">
 
         <map name="workmap">
         <area shape="rect" coords="34,44,270,350" href="computer.htm" onclick="myComputer()">
         <area shape="rect" coords="290,172,333,250" href="phone.htm" onclick="myPhone()">
         <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myCoffee()">
-        </map>
-
-<!-- notification when you click on coffee cup -->
-
+        </map> -->
+        
         <script>
-            function myComputer() {
-            alert("You clicked the computer!");
+            // function myComputer() {
+            // alert("You clicked the computer!");
+            // }
+
+            // function myPhone() {
+            // alert("You clicked the phone!");
+            // }
+
+            // function myCoffee() {
+            // alert("You clicked the coffee cup!");
+            // }
+
+            function myFlowerBud() {
+            alert("You found it! 1/2");
             }
 
-            function myPhone() {
-            alert("You clicked the phone!");
+            function myFlowerBud2() {
+            alert("You found it! 2/2");
             }
 
-            function myCoffee() {
-            alert("You clicked the coffee cup!");
+            function myPainting() {
+            alert("You found it! 1/2");
             }
+
+            function myCurtain() {
+            alert("You found it! 2/2");
+            }
+
+            function myWood() {
+            alert("You found it! 2/2");
+            }
+
         </script>
 
         
@@ -39,7 +97,6 @@
 
     </main>
 
-    <script src="js/video.js"></script>
-    <script src="js/webcam.js"></script>
+    
 </body>
 </html>

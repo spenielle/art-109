@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+
+    <div class="difference-one" id="level-one">
+        <img src="media/findthediff1.png" alt="find-the-difference" usemap="#image-map-one">
+        <map name="image-map-one">
+            <area shape="rect" coords="1480,695,1523,730" alt="first-difference" title="first-difference" href="#" onclick="findDiff(1, 2)">
+            <area shape="rect" coords="1310,546,1245,473" alt="second-difference" title="second-difference" href="#" onclick="findDiff(2, 2)">
+        </map>
+    </div>
+
+    <script>
+        const found = new Set();
+
+        function findDiff(diffNumber, total) {
+
+            found.add(diffNumber);
+            const remaining = total - found.size;
+
+            if (remaining > 0) {
+
+                alert('You found one!');
+
+            } else {
+                
+                alert('You found them all! Moving to level 2...');
+                window.location.href = 'index2.html';
+            }
+        }
+    </script>
+
+</main>
+</body>
+</html>

@@ -1,13 +1,23 @@
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
 body {
+
     background-image: url('../media/findthediffwall.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    
 }
 
 .difference-one {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +25,7 @@ body {
 }
 
 .difference-two {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +33,22 @@ body {
 }
 
 .difference-three {
+
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+
+button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 40px;
+    cursor: pointer;
+
 }
