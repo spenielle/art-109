@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seventeen x Haikyuu Cyberpunk</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero__glow"></div>
+      <div class="hero__content">
+        <p class="eyebrow">NEON SYNTHED COLLISION</p>
+        <h1>Seventeen x Haikyuu</h1>
+        <p>Cyberpunk K-pop energy meets volleyball spirit in a futuristic fan experience.</p>
+        <div class="hero__actions">
+          <button id="toggleMode" class="btn">Activate Cyber Glow</button>
+          <button id="randomCard" class="btn btn-secondary">Random Idol/Player</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="info-panel">
+        <div class="panel__card">
+          <h2>Seventeen Vibe</h2>
+          <p>Modern synth textures, sharp choreography, and neon visuals inspired by K-pop stage craft.</p>
+          <ul>
+            <li>Cybercore color palette</li>
+            <li>Electronic rhythm pulses</li>
+            <li>Group power with futuristic style</li>
+          </ul>
+        </div>
+        <div class="panel__card panel__card--highlight">
+          <h2>Haikyuu Energy</h2>
+          <p>Fast-paced spikes, team-driven passion, and bright court intensity in dark city nights.</p>
+          <ul>
+            <li>Volleyball spirit</li>
+            <li>Team chemistry</li>
+            <li>Digital arena action</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <h2>Seventeen Members</h2>
+        <div class="gallery" aria-label="Seventeen character cards">
+          <article class="card" data-type="seventeen" data-name="S.Coups" data-role="Leader, Hip-Hop Team Leader, Rapper, Sub-Vocalist" data-description="Leader of SEVENTEEN and Hip-Hop Team Leader; sharp rapper with commanding stage direction.">
+            <div class="card__avatar"><img src="images/S.COUPS_-3-593x800.jpg" alt="S.Coups from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>S.Coups</h3>
+              <p class="card__role">Leader, Hip-Hop Team Leader, Rapper, Sub-Vocalist</p>
+              <ul class="card__traits">
+                <li>Commanding group leader</li>
+                <li>Sharp rap delivery</li>
+                <li>Creative stage anchor</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Jeonghan" data-role="Lead Vocalist, Visual" data-description="Smooth lead vocalist with graceful visuals and dreamy tone.">
+            <div class="card__avatar"><img src="images/JEONGHAN-1-640x800.jpg" alt="Jeonghan from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Jeonghan</h3>
+              <p class="card__role">Lead Vocalist, Visual</p>
+              <ul class="card__traits">
+                <li>Graceful stage visuals</li>
+                <li>Soft, controlled vocals</li>
+                <li>Dreamy performance presence</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Joshua" data-role="Lead Vocalist, Visual" data-description="Warm-toned vocalist with polished melodies and sincere stage energy.">
+            <div class="card__avatar"><img src="images/JOSHUA-2-593x800.jpg" alt="Joshua from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Joshua</h3>
+              <p class="card__role">Lead Vocalist, Visual</p>
+              <ul class="card__traits">
+                <li>Warm, expressive singing</li>
+                <li>Polished vocal tone</li>
+                <li>Sincere stage energy</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Jun" data-role="Lead Dancer, Sub-Vocalist" data-description="Dynamic lead dancer with crisp moves and commanding stage energy.">
+            <div class="card__avatar"><img src="images/JUN-2-593x800.jpg" alt="Jun from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Jun</h3>
+              <p class="card__role">Lead Dancer, Sub-Vocalist</p>
+              <ul class="card__traits">
+                <li>Fluid, powerful choreography</li>
+                <li>Bright vocal support</li>
+                <li>Dynamic stage presence</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Hoshi" data-role="Performance Team Leader, Main Dancer, Lead Vocalist, Sub-Rapper" data-description="Performance leader and choreographer with explosive charisma.">
+            <div class="card__avatar"><img src="images/HOSHI-2-593x800.jpg" alt="Hoshi from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Hoshi</h3>
+              <p class="card__role">Performance Team Leader, Main Dancer, Lead Vocalist, Sub-Rapper</p>
+              <ul class="card__traits">
+                <li>Explosive choreography creator</li>
+                <li>Commanding stage leader</li>
+                <li>High-energy performance</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Wonwoo" data-role="Rapper, Sub-Vocalist" data-description="Deep-voiced rapper with thoughtful lyrics and strong stage presence.">
+            <div class="card__avatar"><img src="images/WONWOO-2-593x800.jpg" alt="Wonwoo from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Wonwoo</h3>
+              <p class="card__role">Rapper, Sub-Vocalist</p>
+              <ul class="card__traits">
+                <li>Low-toned rap flow</li>
+                <li>Thoughtful lyrical style</li>
+                <li>Calm stage intensity</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Woozi" data-role="Vocal Team Leader, Lead Vocalist, Producer" data-description="Master producer and vocal leader with polished composition skills.">
+            <div class="card__avatar"><img src="images/WOOZI-2-900x667.jpg" alt="Woozi from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Woozi</h3>
+              <p class="card__role">Vocal Team Leader, Lead Vocalist, Producer</p>
+              <ul class="card__traits">
+                <li>Songwriting and production genius</li>
+                <li>Refined vocal leadership</li>
+                <li>Creative musical intuition</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="DK" data-role="Main Vocalist" data-description="Bright main vocalist with strong emotional delivery and a soaring range.">
+            <div class="card__avatar"><img src="images/DK-2-593x800.jpg" alt="DK from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>DK</h3>
+              <p class="card__role">Main Vocalist</p>
+              <ul class="card__traits">
+                <li>Powerful live vocal delivery</li>
+                <li>Emotional stage presence</li>
+                <li>Soaring range and energy</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Mingyu" data-role="Rapper, Sub-Vocalist, Visual, Face of the Group" data-description="Confident rapper with visual presence and polished verse delivery.">
+            <div class="card__avatar"><img src="images/MINGYU-2-593x800.jpg" alt="Mingyu from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Mingyu</h3>
+              <p class="card__role">Rapper, Sub-Vocalist, Visual, Face of the Group</p>
+              <ul class="card__traits">
+                <li>Tall visual and confident rap</li>
+                <li>Polished verse delivery</li>
+                <li>Charismatic stage presence</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="The8" data-role="Lead Dancer, Sub-Vocalist, Sub-Rapper" data-description="Versatile lead dancer with graceful motion and refined performance skill.">
+            <div class="card__avatar"><img src="images/THE8-2-593x800.jpg" alt="The8 from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>The8</h3>
+              <p class="card__role">Lead Dancer, Sub-Vocalist, Sub-Rapper</p>
+              <ul class="card__traits">
+                <li>Graceful, precise dance style</li>
+                <li>Refined performance control</li>
+                <li>Multilingual stage presence</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Seungkwan" data-role="Main Vocalist, Face of the Group" data-description="Main vocalist and moodmaker with powerful live singing and infectious energy.">
+            <div class="card__avatar"><img src="images/SEUNGKWAN-2-593x800.jpg" alt="Seungkwan from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Seungkwan</h3>
+              <p class="card__role">Main Vocalist, Face of the Group</p>
+              <ul class="card__traits">
+                <li>Explosive live vocals</li>
+                <li>Charismatic moodmaker</li>
+                <li>Joyful stage connection</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Vernon" data-role="Rapper, Sub-Vocalist, Visual, Face of the Group" data-description="Rapper with fluent English flow, lyricism, and expressive stage presence.">
+            <div class="card__avatar"><img src="images/VERNON-3-593x800.jpg" alt="Vernon from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Vernon</h3>
+              <p class="card__role">Rapper, Sub-Vocalist, Visual, Face of the Group</p>
+              <ul class="card__traits">
+                <li>Fluent English rap flow</li>
+                <li>Global visual style</li>
+                <li>Expressive lyricism</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="seventeen" data-name="Dino" data-role="Main Dancer, Sub-Vocalist, Sub-Rapper, Maknae" data-description="Youngest member with fierce dance energy and fearless stage craft.">
+            <div class="card__avatar"><img src="images/DINO-2-900x667.jpg" alt="Dino from KProfiles" /></div>
+            <div class="card__meta">
+              <h3>Dino</h3>
+              <p class="card__role">Main Dancer, Sub-Vocalist, Sub-Rapper, Maknae</p>
+              <ul class="card__traits">
+                <li>Fierce dance energy</li>
+                <li>Fearless stage movement</li>
+                <li>Youngest powerful performer</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <h2>Haikyuu Characters</h2>
+        <div class="gallery" aria-label="Haikyuu character cards">
+          <article class="card" data-type="haikyuu" data-name="Shoyo Hinata" data-role="Middle Blocker" data-description="Explosive Karasuno attacker with lightning vertical reach and unshakable determination.">
+            <div class="card__avatar"><img src="images/hinata.jpg" alt="Portrait of Shoyo Hinata" /></div>
+            <div class="card__meta">
+              <h3>Shoyo Hinata</h3>
+              <p class="card__role">Middle Blocker</p>
+              <ul class="card__traits">
+                <li>Unmatched jump power</li>
+                <li>Relentless speed and agility</li>
+                <li>Bright team energy</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Tobio Kageyama" data-role="Setter" data-description="Precision setter who controls Karasuno's offense with sharp timing and fierce focus.">
+            <div class="card__avatar"><img src="images/kageyama.jpg" alt="Portrait of Tobio Kageyama" /></div>
+            <div class="card__meta">
+              <h3>Tobio Kageyama</h3>
+              <p class="card__role">Setter</p>
+              <ul class="card__traits">
+                <li>Perfectly timed sets</li>
+                <li>Ice-cold focus</li>
+                <li>Quick attack coordination</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Kei Tsukishima" data-role="Middle Blocker" data-description="Strategic blocker with tall reach, calm analysis, and clutch defense.">
+            <div class="card__avatar"><img src="images/tsukishima.jpg" alt="Portrait of Kei Tsukishima" /></div>
+            <div class="card__meta">
+              <h3>Kei Tsukishima</h3>
+              <p class="card__role">Middle Blocker</p>
+              <ul class="card__traits">
+                <li>Calculated block reads</li>
+                <li>Slow-burn mental edge</li>
+                <li>Reliable court coverage</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Tadashi Yamaguchi" data-role="Middle Blocker" data-description="Up-and-coming blocker with the float serve and growing confidence.">
+            <div class="card__avatar"><img src="images/yamaguchi.jpg" alt="Portrait of Tadashi Yamaguchi" /></div>
+            <div class="card__meta">
+              <h3>Tadashi Yamaguchi</h3>
+              <p class="card__role">Middle Blocker</p>
+              <ul class="card__traits">
+                <li>Precision float serve</li>
+                <li>Supportive team focus</li>
+                <li>Calm under pressure</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Daichi Sawamura" data-role="Captain / Wing Spiker" data-description="Karasuno captain with steady leadership and dependable wing attacks.">
+            <div class="card__avatar"><img src="images/daichi.jpg" alt="Portrait of Daichi Sawamura" /></div>
+            <div class="card__meta">
+              <h3>Daichi Sawamura</h3>
+              <p class="card__role">Captain / Wing Spiker</p>
+              <ul class="card__traits">
+                <li>Strong leadership presence</li>
+                <li>Solid defensive anchor</li>
+                <li>Reliable court control</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Koshi Sugawara" data-role="Setter" data-description="Supportive setter and morale booster who keeps Karasuno connected.">
+            <div class="card__avatar"><img src="images/sugawara.jpg" alt="Portrait of Koshi Sugawara" /></div>
+            <div class="card__meta">
+              <h3>Koshi Sugawara</h3>
+              <p class="card__role">Setter</p>
+              <ul class="card__traits">
+                <li>Reliable backup setter</li>
+                <li>Encouraging leadership</li>
+                <li>Calming team presence</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Asahi Azumane" data-role="Ace / Wing Spiker" data-description="Powerful Karasuno ace with a gentle heart and devastating spikes.">
+            <div class="card__avatar"><img src="images/asahi.jpg" alt="Portrait of Asahi Azumane" /></div>
+            <div class="card__meta">
+              <h3>Asahi Azumane</h3>
+              <p class="card__role">Ace / Wing Spiker</p>
+              <ul class="card__traits">
+                <li>Thunderous spike power</li>
+                <li>Fearsome offensive presence</li>
+                <li>Comforting teammate support</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Ryunosuke Tanaka" data-role="Wing Spiker" data-description="Fiery wing spiker with fierce fighting spirit and dependable energy.">
+            <div class="card__avatar"><img src="images/tanaka.jpg" alt="Portrait of Ryunosuke Tanaka" /></div>
+            <div class="card__meta">
+              <h3>Ryunosuke Tanaka</h3>
+              <p class="card__role">Wing Spiker</p>
+              <ul class="card__traits">
+                <li>Unwavering confidence</li>
+                <li>Rallying team spirit</li>
+                <li>Explosive offense</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Yu Nishinoya" data-role="Libero" data-description="Karasuno libero with lightning reflexes, fearless defense, and fiery heart.">
+            <div class="card__avatar"><img src="images/nishinoya.jpg" alt="Portrait of Yu Nishinoya" /></div>
+            <div class="card__meta">
+              <h3>Yu Nishinoya</h3>
+              <p class="card__role">Libero</p>
+              <ul class="card__traits">
+                <li>Explosive floor defense</li>
+                <li>Fearless attitude</li>
+                <li>Quick reflex reactions</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Tooru Oikawa" data-role="Setter" data-description="Charismatic setter with flawless serve receives and tactical match control.">
+            <div class="card__avatar"><img src="images/oikawa.jpg" alt="Portrait of Tooru Oikawa" /></div>
+            <div class="card__meta">
+              <h3>Tooru Oikawa</h3>
+              <p class="card__role">Setter</p>
+              <ul class="card__traits">
+                <li>Masterful set distribution</li>
+                <li>Confident leadership</li>
+                <li>Game-reading instinct</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Hajime Iwaizumi" data-role="Ace" data-description="Strong ace and trusted captain with powerful spikes and unwavering loyalty.">
+            <div class="card__avatar"><img src="images/iwaizumi.webp" alt="Portrait of Hajime Iwaizumi" /></div>
+            <div class="card__meta">
+              <h3>Hajime Iwaizumi</h3>
+              <p class="card__role">Ace</p>
+              <ul class="card__traits">
+                <li>Devastating power attacks</li>
+                <li>Steady mental toughness</li>
+                <li>Dependable teamwork</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Tetsuro Kuroo" data-role="Middle Blocker" data-description="Strategic captain with devastating blocks and sharp mental gameplay.">
+            <div class="card__avatar"><img src="images/kuroo.jpg" alt="Portrait of Tetsuro Kuroo" /></div>
+            <div class="card__meta">
+              <h3>Tetsuro Kuroo</h3>
+              <p class="card__role">Middle Blocker</p>
+              <ul class="card__traits">
+                <li>Sharp block execution</li>
+                <li>Team leadership</li>
+                <li>Poised game sense</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Kenma Kozume" data-role="Setter" data-description="Calm tactical setter who reads opponents and supports the team with precise feeds.">
+            <div class="card__avatar"><img src="images/kenma.jpg" alt="Portrait of Kenma Kozume" /></div>
+            <div class="card__meta">
+              <h3>Kenma Kozume</h3>
+              <p class="card__role">Setter</p>
+              <ul class="card__traits">
+                <li>Analytical playmaking</li>
+                <li>Steady court vision</li>
+                <li>Subtle tactical genius</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Hoshiumi Sakusa" data-role="Wing Spiker" data-description="Explosive ace from Inarizaki with precise attacks and intense match focus.">
+            <div class="card__avatar"><img src="images/hoshiumi.jpg" alt="Portrait of Hoshiumi Sakusa" /></div>
+            <div class="card__meta">
+              <h3>Hoshiumi Sakusa</h3>
+              <p class="card__role">Wing Spiker</p>
+              <ul class="card__traits">
+                <li>Laser-focused spike precision</li>
+                <li>Game-changing explosive offense</li>
+                <li>Unwavering competitive drive</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Ushijima Wakatoshi" data-role="Ace / Wing Spiker" data-description="Dominant Inarizaki ace with overwhelming power and intimidating court presence.">
+            <div class="card__avatar"><img src="images/ushijima.jpg" alt="Portrait of Ushijima Wakatoshi" /></div>
+            <div class="card__meta">
+              <h3>Ushijima Wakatoshi</h3>
+              <p class="card__role">Ace / Wing Spiker</p>
+              <ul class="card__traits">
+                <li>Immense spike power</li>
+                <li>Stone-cold focus</li>
+                <li>Fear-inducing offense</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Atsumu Miya" data-role="Setter" data-description="Intense setter with remarkable jump and lightning-quick distribution.">
+            <div class="card__avatar"><img src="images/atsumu.jpg" alt="Portrait of Atsumu Miya" /></div>
+            <div class="card__meta">
+              <h3>Atsumu Miya</h3>
+              <p class="card__role">Setter</p>
+              <ul class="card__traits">
+                <li>Fast, unpredictable sets</li>
+                <li>Explosive jump serve</li>
+                <li>Competitive edge</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Kotaro Bokuto" data-role="Ace" data-description="Emotional ace with sky-high spikes and unstoppable offensive flair.">
+            <div class="card__avatar"><img src="images/bokuto.jpg" alt="Portrait of Kotaro Bokuto" /></div>
+            <div class="card__meta">
+              <h3>Kotaro Bokuto</h3>
+              <p class="card__role">Ace</p>
+              <ul class="card__traits">
+                <li>Powerful aerial attacks</li>
+                <li>Emotional momentum</li>
+                <li>Electric match energy</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-type="haikyuu" data-name="Keiji Akaashi" data-role="Setter" data-description="Calm stabilizing setter who balances Bokuto's power with precise control.">
+            <div class="card__avatar"><img src="images/akaashi.jpg" alt="Portrait of Keiji Akaashi" /></div>
+            <div class="card__meta">
+              <h3>Keiji Akaashi</h3>
+              <p class="card__role">Setter</p>
+              <ul class="card__traits">
+                <li>Balanced set timing</li>
+                <li>Quiet leadership</li>
+                <li>Strong support presence</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="interactive-panel">
+        <div class="panel__text">
+          <h2>Customize the arena</h2>
+          <p>Slide the glow and choose whether the network pulses are K-pop stage or Haikyuu court mode.</p>
+        </div>
+        <form class="controls">
+          <label for="intensity">Glow intensity</label>
+          <input id="intensity" type="range" min="0" max="100" value="70" />
+
+          <label for="filter">Filter</label>
+          <select id="filter">
+            <option value="neon">Neon Pulse</option>
+            <option value="glitch">Glitch Wave</option>
+            <option value="grid">Holo Grid</option>
+          </select>
+
+          <label for="theme">Theme</label>
+          <select id="theme">
+            <option value="neon">Neon Blue</option>
+            <option value="cyan">Cyan Circuit</option>
+            <option value="purple">Purple Haze</option>
+            <option value="pink">Pink Surge</option>
+          </select>
+
+          <label for="motion">Background motion</label>
+          <select id="motion">
+            <option value="static">Static</option>
+            <option value="wave">Wave</option>
+            <option value="blink">Blink</option>
+          </select>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed for fans of Seventeen, Haikyuu, and cyberpunk aesthetics.</p>
+    </footer>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__panel">
+      <button id="closeModal" class="modal__close">×</button>
+      <div class="modal__avatar">
+        <img id="modalImage" src="" alt="Selected member image" />
+      </div>
+      <h2 id="modalTitle">Featured Spotlight</h2>
+      <p id="modalRole" class="modal__role"></p>
+      <p id="modalContent"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
