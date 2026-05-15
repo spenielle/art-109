@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+    <section class="single-panel-container" aria-label="Scene 1">
+        <img src="media/scene1.png" alt="Scene 1" class="full-panel" />
+        <img src="media/arrow.png" alt="Next scene" class="arrow-button" id="scene1Arrow" />
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const arrow = document.getElementById('scene1Arrow');
+            arrow.addEventListener('click', () => {
+                window.location.href = 'scene2.html';
+            });
+        });
+    </script>
+</main>
+</body>
+</html>

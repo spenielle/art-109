@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RULES</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+    <section id="scene4" class="single-panel-container" aria-label="Blythie scene">
+        <img src="media/panel5.png" alt="comic panel 5" class="full-panel" />
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scene = document.getElementById('scene4');
+            scene.style.cursor = 'pointer';
+            scene.addEventListener('click', () => {
+                window.location.href = 'scene1.html';
+            });
+        });
+    </script>
+</main>
+</body>
+</html>

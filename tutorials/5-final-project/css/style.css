@@ -1,0 +1,242 @@
+﻿main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+body.title-screen {
+
+    background-color: #000;
+    min-height: 100vh;    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-screen-main {
+
+    position: relative;
+    width: min(100vw, 1920px);
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url('../media/titlescreennoplay.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.play-button {
+
+    position: absolute;
+    top: 67%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    min-width: 180px;
+    min-height: 90px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(255, 255, 255, 0.95);
+    color: #111;
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 7px 5px 5px rgba(0, 0, 0, 0.25);
+    
+}
+
+.play-button:hover,
+.play-button:focus {
+
+    transform: translate(-50%, -50%) scale(1.02);
+
+}
+
+body {
+
+    background-image: url('../media/findthediffwall.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
+.difference-one {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.difference-two {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.difference-three {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.difference-game img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 40px;
+    cursor: pointer;
+
+}
+
+.comic-container {
+
+    position: relative;
+    width: min(100vw, 1920px);
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.comic-container .whitebg {
+
+    display: none;
+
+}
+
+.comic-container .panel {
+
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transform: scale(0.98);
+    transition: opacity 420ms ease, transform 420ms cubic-bezier(.2,.8,.2,1);
+
+}
+
+.comic-container .panel.show {
+
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.comic-container .panel-1 { z-index: 2; }
+.comic-container .panel-2 { z-index: 3; }
+.comic-container .panel-3 { z-index: 4; }
+
+@media (max-width: 880px) {
+
+    .comic-container { width: 100%; }
+
+}
+
+@media (max-width: 520px) {
+
+    .comic-container { aspect-ratio: 4/3; }
+
+}
+
+.single-panel-container {
+
+    position: relative;
+    width: min(100vw, 1920px);
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000;
+
+}
+
+.single-panel-container .full-panel {
+
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.speech-bubble {
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    padding: 10px 120px;
+    background: rgba(255, 255, 255, 0.96);
+    color: #111;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 0 7px 5px 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    z-index: 10;
+
+}
+
+.speech-bubble::after {
+
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 16px solid rgba(255, 255, 255, 0.96);
+
+}
+
+.arrow-button {
+    position: absolute;
+    left: 92.2%;
+    top: 57.8%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: auto;
+    cursor: pointer;
+    z-index: 20;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.arrow-button:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 0.95;
+}

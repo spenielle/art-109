@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORY INTRODUCTION</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+    <section class="comic-container" id="comicIntro" aria-label="Blythie comic intro">
+        <img src="media/panel1.png" alt="panel 1" class="panel panel-1"/>
+        <img src="media/panel2.png" alt="panel 2" class="panel panel-2"/>
+        <img src="media/panel3.png" alt="panel 3" class="panel panel-3"/>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const panels = Array.from(document.querySelectorAll('.comic-container .panel'));
+            const container = document.getElementById('comicIntro');
+            let animationComplete = false;
+
+            panels.forEach((p, i) => {
+
+                setTimeout(() => {
+
+                    p.classList.add('show');
+
+                    if (i === panels.length - 1) {
+                        
+                        animationComplete = true;
+                        container.style.cursor = 'pointer';
+
+                    }
+                }, i * 700 + 300);
+            });
+
+            container.addEventListener('click', () => {
+
+                if (!animationComplete) {
+
+                    panels.forEach(p => p.classList.add('show'));
+                    animationComplete = true;
+                    container.style.cursor = 'pointer';
+                    return;
+
+                }
+
+                window.location.href = 'index3.html';
+            });
+        });
+    </script>
+
+</main>
+</body>
+</html>
